@@ -1,0 +1,536 @@
+<div id="output-body"><div class="stream output-id-1"><div class="output_subarea output_text"><pre>Эксперимент:
+n = 15;
+alpha = 100000;
+l = 0.00005.
+
+C:
+</pre></div></div><div class="display_data output-id-2"><div class="output_subarea output_html rendered_html">
+  <div id="df-cf080441-a971-4ff5-af74-4872470f61fd" class="colab-df-container">
+    <div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+      <th>13</th>
+      <th>14</th>
+      <th>15</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>2.70800353334662080584</td>
+      <td>14.22097566560577242001</td>
+      <td>25.73390113104266063715</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2.70800686682996083476</td>
+      <td>14.22097566563910575610</td>
+      <td>25.73390113104266418986</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2.70801020030218886347</td>
+      <td>14.22097566567243909219</td>
+      <td>25.73390113104266418986</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2.70801353376330489198</td>
+      <td>14.22097566570577242828</td>
+      <td>25.73390113104266418986</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2.70801686721330892027</td>
+      <td>14.22097566573910576437</td>
+      <td>25.73390113104266418986</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2.70802020065220094835</td>
+      <td>14.22097566577243910046</td>
+      <td>25.73390113104266418986</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2.70802353407998142032</td>
+      <td>14.22097566580577243656</td>
+      <td>25.73390113104266418986</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2.70802686749665033616</td>
+      <td>14.22097566583910577265</td>
+      <td>25.73390113104266418986</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2.70803020090220725180</td>
+      <td>14.22097566587243910874</td>
+      <td>25.73390113104266418986</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2.70803353429665305541</td>
+      <td>14.22097566590577244483</td>
+      <td>25.73390113104266418986</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2.70803686767998730289</td>
+      <td>14.22097566593910578092</td>
+      <td>25.73390113104266418986</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2.70804020105220955017</td>
+      <td>14.22097566597243911701</td>
+      <td>25.73390113104266418986</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>2.70804353441332112951</td>
+      <td>14.22097566600577245310</td>
+      <td>25.73390113104266774258</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>2.70804686776332115272</td>
+      <td>14.22097566603910578920</td>
+      <td>25.73390113104266774258</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>2.70805020110221006391</td>
+      <td>14.22097566607243912529</td>
+      <td>25.73390113104266774258</td>
+      <td>37.24682659601289458351</td>
+      <td>48.75975206098312497716</td>
+      <td>60.2726775259533553708</td>
+      <td>71.78560299092357865902</td>
+      <td>83.29852845589380194724</td>
+      <td>94.81145392086403944631</td>
+      <td>106.32437938583426273453</td>
+      <td>117.83730485080450023361</td>
+      <td>129.35023031577472352183</td>
+      <td>140.8631557807449610209</td>
+      <td>152.37608124571517009826</td>
+      <td>163.88900671068540759734</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-cf080441-a971-4ff5-af74-4872470f61fd')" title="Convert this dataframe to an interactive table." style="display: block;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script type="">
+      const buttonEl =
+        document.querySelector('#df-cf080441-a971-4ff5-af74-4872470f61fd button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-cf080441-a971-4ff5-af74-4872470f61fd');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-867146cf-04ce-401e-b83e-959dc82d4d83">
+  <button class="colab-df-quickchart" onclick="quickchart('df-867146cf-04ce-401e-b83e-959dc82d4d83')" title="Suggest charts." style="display: block;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script type="">
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-867146cf-04ce-401e-b83e-959dc82d4d83 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div><div class="stream output-id-3"><div class="output_subarea output_text"><pre>
+
+I = 1249.4778801702182136
+J = 1249.4779268383738327
+Δ = -0.000046668155619045137428
+γ = 2399.9680000799999107
+R = -0.11200208010846196549
+
+Венгерский (максимум):               S = 1249.47792683837360527832
+
+Венгерский (минимум):                S = 1249.47788017021844098053
+
+Жадный алгоритм:                     S = 1249.47792683837383265200
+Разность с оптимальным =                 -2.2737367544323205948e-13
+
+</pre></div></div></div>
